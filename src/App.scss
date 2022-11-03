@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body{
+  
+  box-sizing: border-box;
+}
+html {
+font-size: 62.5%;
+}
+@media only screen and (max-width:768px){
+  body{
+    font-size: 30%;
+  }
+}
+.heading--primary{
+  font-size: 3rem;
+  letter-spacing: .3rem;
+}
+.heading--secondary{
+  font-size: 2rem;
+}
+.heading--tertiary{
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+.margin-bottom-small{
+  margin-bottom: 1rem;
+}
+.margin-bottom-medium{
+  margin-bottom: 2.5rem;
+}
+.margin-bottom-big{
+  margin-bottom: 4rem;
+}
+.u-center-text{
+  text-align: center;
+}
+.paragraph{
+  font-size: 1.3rem;
+}
+.u-center-margin{
+  margin: 0 auto;
+}
