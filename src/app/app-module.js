@@ -1,3 +1,4 @@
 import About from "./Screens/about/About";
-const array = [About];
+import Home from './Screens/home'
+const array = [Home];
 export default array 
