@@ -184,11 +184,11 @@ function About() {
     </div>
   );
 }
-
-export default {
+const data = {
   routeProps: {
-    path: 'about',
-    element: <About />
+    path: "about",
+    element: <About />,
   },
-  name: 'about'
+  name: "about",
 };
+export default data

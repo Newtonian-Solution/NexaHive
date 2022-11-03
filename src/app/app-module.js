@@ -1,3 +1,3 @@
 import About from "./Screens/about/About";
-
-export default [About]
+const array = [About];
+export default array 
