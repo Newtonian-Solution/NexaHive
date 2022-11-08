@@ -1,9 +1,12 @@
 import React from 'react'
+import Nav from '../../../Component/nav';
 
 const Home = () => {
   return (
-      <div className='heading--primary u-center-text'>
-          Coming Soon
+    <div className='heading--primary u-center-text'>
+      <Nav />
+    
+      
     </div>
   )
 }

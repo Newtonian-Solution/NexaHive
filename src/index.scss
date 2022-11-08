@@ -1,21 +1,11 @@
 :root {
-  --color-primary: #6ee7b7;
+  --color-primary: #226711;
   --color-sec: #34d399;
   --color-text-1: #f5f5f5;
   --color-text-2: #525252;
   --color-bg: #292524;
 }
-body {
-  font-family: "Playfair Display", serif;
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
@@ -48,6 +38,17 @@ html {
     font-size: 40%;
   }
 
+}
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 
