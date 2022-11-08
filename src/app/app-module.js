@@ -1,4 +1,3 @@
-// import About from "./Screens/about/About";
-import Home from './Screens/home'
+import Home from "./Screens/home/home";
 const array = [Home];
-export default array 
+export default array;
