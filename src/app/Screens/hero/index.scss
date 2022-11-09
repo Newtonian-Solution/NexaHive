@@ -1,0 +1,109 @@
+@import 'src/index.scss';
+.hero {
+  padding: 7rem 4rem;
+ 
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+ @include respond(phone) {
+    grid-template-columns: 1fr;
+    justify-content: left;
+  }
+  .first-row {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: left;
+  }
+  
+  &--heading {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6rem;
+    width: 60rem;
+    text-align: left;
+    display: inline-block;
+   
+    @include respond(phone) {
+        font-size: 3rem;
+        width: 50rem;
+        
+    
+        
+    }
+    @media (max-width: 380px) {
+        width: 30rem;
+    }
+  }
+  &__img--container {
+    width: 45rem;
+    height: 45rem;
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+    @include respond(phone) {
+        width: 40rem;
+        height: 40rem;
+    }
+  }
+  &--paragraph {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    width: 38rem;
+    text-align: left;
+    color: var(--color-text);
+
+    @include respond(phone) {
+        width: 90%;
+    }
+  }
+  &-btn {
+    border-radius: 100px !important;
+    padding: 18px, 28px, 18px, 28px;
+    background: var(--color-primary);
+    backface-visibility: hidden;
+    width: 14rem;
+    height: 4rem;
+    color: #fafafa;
+    font-family: sans-serif;
+    position: relative;
+
+    @include respond(tab-port) {
+        width: 18rem;
+        height: 5rem;
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    &::after {
+        background-color: var(--color-primary);
+    }
+    &:hover {
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+  }
+  .second-row {
+    align-self: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 3rem;
+  }
+}

@@ -1,9 +1,8 @@
 :root {
   --color-primary: #226711;
   --color-sec: #34d399;
-  --color-text-1: #f5f5f5;
-  --color-text-2: #525252;
-  --color-bg: #292524;
+  --color-text:#808080;
+ 
 }
 
 @mixin respond($breakpoint) {
@@ -42,6 +41,8 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1.5rem;
+  // padding-right: 5rem;
+  // padding-left: 5rem;
 }
 *,
 *::before,
