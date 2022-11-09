@@ -3,6 +3,7 @@
   display: flex;
   position: relative;
   font-size: 1.5rem;
+  font-family: 'Aeonik';
   justify-content: space-around;
   padding-top: 2rem;
   &__logo--container {
@@ -85,7 +86,7 @@
     height: 7rem;
     width: 7rem;
     position: fixed;
-    top: 4rem;
+    top: 2rem;
 
     border-radius: 50%;
     z-index: 4000;
@@ -110,7 +111,7 @@
   .navigation__icon,
   .navigation__icon::before,
   .navigation__icon::after {
-    width: 2.5rem;
+    width: 3rem;
     height: 2px;
     background-color: #000;
     display: inline-block;
