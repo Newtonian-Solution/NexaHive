@@ -27,11 +27,12 @@
       background-color: var(--color-primary);
       position: absolute;
       align-items: center;
-      left: -20rem;
-      height: 100vh;
+      padding-top: 3rem;
+      left: -35rem;
+      height: 110vh;
+      top: -2rem;
       width: 30rem;
       font-size: 2.5rem;
-      opacity: 0;
        transition: all 0.5s;
        z-index: 2000;
       
@@ -113,7 +114,7 @@
   .navigation__icon,
   .navigation__icon::before,
   .navigation__icon::after {
-    width: 3rem;
+    width: 3.5rem;
     height: 2px;
     background-color: #000;
     display: inline-block;
@@ -150,7 +151,6 @@
     transform: rotate(135deg);
   }
   .active {
-    opacity: 1;
     left: -5rem;
    
   }

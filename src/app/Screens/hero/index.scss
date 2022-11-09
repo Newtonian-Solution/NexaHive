@@ -34,7 +34,7 @@
         
     }
     @media (max-width: 380px) {
-        width: 30rem;
+        width: 45rem;
     }
   }
   &__img--container {
@@ -59,7 +59,7 @@
     color: var(--color-text);
 
     @include respond(phone) {
-        width: 90%;
+        width: 100%;
     }
   }
   &-btn {
