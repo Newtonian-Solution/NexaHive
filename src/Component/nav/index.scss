@@ -7,6 +7,7 @@
   justify-content: space-between;
   padding-top: 2rem;
   padding-left: 4rem;
+  padding-right: 4rem;
   &__logo--container {
     height: 4.3rem;
     width: 16.4rem;
@@ -94,7 +95,7 @@
     border-radius: 50%;
     z-index: 4000;
     @include respond(tab-port) {
-      right: 0;
+      right: 4rem;
     }
     @media (max-width: 310px) {
       top: 2rem;

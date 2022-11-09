@@ -5,7 +5,11 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 2.5rem;
+
+  @media (max-width:780px)  {
+    gap: 1.5rem;
+}
  @include respond(phone) {
     grid-template-columns: 1fr;
     justify-content: left;
@@ -54,9 +58,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: 1.7rem;
-    width: 38rem;
+    width: 50rem;
     text-align: left;
     color: var(--color-text);
+@include respond(tab-port) {
+    width: 30rem;
+}
+
 
     @include respond(phone) {
         width: 100%;
