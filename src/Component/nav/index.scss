@@ -128,16 +128,16 @@
     transition: all 0.2s;
   }
   .navigation__icon::before {
-    top: -0.6rem;
+    top: -6px;
   }
   .navigation__icon::after {
-    top: 0.6rem;
+    top: 6px;
   }
   .navigation__button:hover .navigation__icon::before {
-    top: -0.7rem;
+    top: -7px;
   }
   .navigation__button:hover .navigation__icon::after {
-    top: 0.7rem;
+    top:7px;
   }
   .navigation__checkbox:checked + .navigation__button .navigation__icon {
     background-color: transparent;

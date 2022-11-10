@@ -15,7 +15,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="second-row">
-        <p className="hero--paragraph">
+        <p className="hero--paragraph paragraph">
           We take you to where you need to be through Visuals, we are everything
           that happens between your first idea to a product everyone is using.
               </p>

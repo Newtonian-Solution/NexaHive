@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from '../../../Component/nav';
+import About from '../about';
 import HeroSection from '../hero';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div className='heading--primary u-center-text'>
       <Nav />
       <HeroSection />
+      <About />
     
       
     </div>

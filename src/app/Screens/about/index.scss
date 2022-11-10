@@ -1,0 +1,73 @@
+@import "src/index.scss";
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  padding: 4rem 4rem;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+
+   &__first-row {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: left;
+    gap: 2rem;
+  }
+  &__heading {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: left;
+    display: inline-block;
+  }
+
+&--paragraph {
+    width: 40rem !important;
+
+    @media(max-width: 285px) {
+        width: 35rem !important;
+    }
+}
+  &__img--container {
+    width: 40rem;
+    height: 40rem;
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+    @include respond(phone) {
+      width: 40rem;
+      height: 40rem;
+    }
+    @media (max-width: 290px) {
+      width: 35rem;
+      height: 35rem;
+    }
+  }
+  &__second-row {
+    justify-self: center;
+  }
+}
+.swiper{
+    width: 40rem;
+    height: 40rem;
+}
+
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+}
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.hidden {
+    display: none;
+    visibility: hidden;
+}
