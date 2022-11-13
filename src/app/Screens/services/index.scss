@@ -1,0 +1,90 @@
+@import "src/index.scss";
+.services {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  
+  background-color: var(--bg-color);
+  padding: 7rem 4rem;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  &__first-row {
+    text-align: left;
+  }
+
+  &__second-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 5rem;
+    align-self: center;
+
+    @include respond(phone) {
+        gap: 7rem;
+    }
+  }
+  &__heading {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: left;
+    display: inline-block;
+    color: #fafafa;
+    
+  }
+  &__paragraph {
+    color: #fafafa !important;
+    width: 40rem !important;
+    font-size: 1.5rem !important;
+    
+  }
+  &__card {
+    background-color: #fafafa;
+    padding: 2rem;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include respond(phone) {
+        height: 35rem;
+    }
+
+    &--icon {
+      height: 5rem;
+      width: 5rem;
+    }
+    &--heading {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #151515;
+    }
+    &--paragraph {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.7rem;
+      color: #151515;
+      line-height: 3rem;
+
+      @include respond(phone) {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .card-1 {
+    margin-top: 10rem;
+  }
+  .card-2, .card-3 {
+    p {
+        color: var(--color-text)
+    };
+  }
+}

@@ -25,11 +25,13 @@
   }
 
 &--paragraph {
-    width: 40rem !important;
-
-    @media(max-width: 285px) {
-        width: 35rem !important;
+    width: 45rem !important;
+ @include respond(phone) {
+      width: 100% !important;
     }
+    // @media(max-width: 285px) {
+    //     width: 35rem !important;
+    // }
 }
   &__img--container {
     width: 40rem;
@@ -52,8 +54,8 @@
   }
 }
 .swiper{
-    width: 40rem;
-    height: 40rem;
+    width: 90vw;
+    height: 50rem;
 }
 
 .swiper-slide{

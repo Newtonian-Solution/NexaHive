@@ -1,6 +1,6 @@
 :root {
   --color-primary: #226711;
-  --color-sec: #34d399;
+  --bg-color: #5840BA;
   --color-text:#808080;
  
 }
@@ -105,5 +105,22 @@ body {
     width: 50rem;
     text-align: left;
     color: var(--color-text);
+    line-height: 2rem;
 }
 
+@keyframes up-down {
+  0% {
+transform: translateY(10px);  }
+  
+  100% {
+transform: translateY(-10px);  }
+  
+}
+@-webkit-keyframes up-down {
+  0% {
+transform: translateY(10px);  }
+  
+  100% {
+transform: translateY(-10px);  }
+  
+}
