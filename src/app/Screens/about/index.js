@@ -15,7 +15,7 @@ function getWindowSize() {
 const About = () => {
   const [windowSize, setWindowSize] = useState(getWindowSize());
   const [showSlider, setShowSlider] = useState(false);
-  console.log(windowSize);
+  // console.log(windowSize);
 
   useEffect(() => {
     function handleWindowResize() {
