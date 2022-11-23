@@ -47,10 +47,10 @@
     background-color: #fafafa;
     padding: 2rem;
     text-align: left;
-
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    
     @include respond(phone) {
         height: 35rem;
     }
