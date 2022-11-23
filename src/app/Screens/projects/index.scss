@@ -48,12 +48,16 @@
   font-size: 18px;
   background-color: #fff;
   color: black;
+  margin-bottom: 2rem;
 }
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 90%;
   object-fit: cover;
+}
+.swiper-pagination {
+  bottom: -5px !important;
 }
 .hidden {
   display: none;
