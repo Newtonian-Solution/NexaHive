@@ -13,10 +13,11 @@
     width: 100% !important;
   }
 
+
   &__work {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 4rem;
     justify-items: center;
     margin-top: 3rem;
 
@@ -38,8 +39,8 @@
   }
 }
 .swiper {
-  width: 90vw;
-  height: 50rem;
+  width: 50vw;
+  height: 17rem;
   margin-top: 5rem;
 }
 
@@ -57,7 +58,7 @@
   object-fit: cover;
 }
 .swiper-pagination {
-  bottom: -5px !important;
+  bottom: -3px !important;
 }
 .hidden {
   display: none;

@@ -1,0 +1,83 @@
+@import '/src/index.scss';
+.teams {
+  padding: 3rem;
+  &__heading {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6rem;
+    display: inline-block;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2.5rem;
+    justify-items: center;
+
+    .img__container {
+        width: 30rem;
+        height: 33rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        img {
+            width: 100%;
+            height: 85%;
+            @media(max-width: 1300px) {
+                height: 50%;
+            }
+        }
+    }
+  }
+  &__name {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.2rem;
+    display: block;
+  }
+  &__role {
+    color: #808080;
+    font-size: 2rem;
+    font-family: sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    
+  }
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+.swiper {
+  width: 90vw;
+  height: 50rem;
+  margin-top: 5rem;
+  @include respond(phone) {
+ height: 40rem;
+  }
+}
+
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background-color: #fff;
+  color: black;
+  margin-bottom: 2rem;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+ 
+}
+.swiper-pagination {
+  bottom: -5px !important;
+   @include respond(phone) {
+    bottom: -6px !important;
+  }
+}
