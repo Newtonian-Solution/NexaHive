@@ -45,18 +45,12 @@
     font-weight: 400;
     
   }
-}
-
-.hidden {
-    display: none;
-    visibility: hidden;
-}
-.swiper {
+  .swiper {
   width: 90vw;
   height: 50rem;
   margin-top: 5rem;
   @include respond(phone) {
- height: 40rem;
+ height: 42rem;
   }
 }
 
@@ -80,4 +74,13 @@
    @include respond(phone) {
     bottom: -6px !important;
   }
+}
+.swiper-pagination-bullet-active {
+background-color: var(--bg-color) !important;
+}
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
 }

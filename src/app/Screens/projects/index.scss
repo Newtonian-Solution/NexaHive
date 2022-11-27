@@ -37,10 +37,9 @@
       width: 100%;
     }
   }
-}
-.swiper {
-  width: 50vw;
-  height: 17rem;
+  .swiper {
+  width: 90vw;
+  height:40rem;
   margin-top: 5rem;
 }
 
@@ -60,6 +59,8 @@
 .swiper-pagination {
   bottom: -3px !important;
 }
+}
+
 .hidden {
   display: none;
   visibility: hidden;
