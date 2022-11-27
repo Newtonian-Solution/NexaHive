@@ -1,0 +1,14 @@
+.faqs {
+      padding: 3rem;
+      padding-top: 5rem;
+
+  &__heading {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6rem;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+}
