@@ -1,0 +1,79 @@
+@import '/src/index.scss';
+.footer {
+  background-color: var(--bg-color);
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 3rem;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .img__wrapper {
+    width: 43px;
+    height: 49px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .column1,
+  .column2,
+  .column3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__address {
+    font-family: var(--font-family-1);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #fff;
+    display: inline-block;
+  }
+  &__text {
+    font-family: var(--font-family-1);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 25px;
+    color: #fff;
+    display: inline-block;
+  }
+  &__link--heading {
+    font-family: var(--font-family-2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 25px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: .5rem;
+  }
+  &__icon {
+    padding: 1rem;
+    margin-right: 1.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+   font-size: 5rem;
+  }
+  .column4{
+align-self: end;  }
+&__line {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  grid-column: 1 / -1;
+}
+&__copyright {
+  font-size: 2rem;
+  display: inline-block;
+  color: #fff;
+  font-family: var(--font-family-1);
+  font-weight: 300;
+  grid-column: 1 / -1;
+}
+}

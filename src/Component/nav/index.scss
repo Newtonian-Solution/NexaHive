@@ -30,7 +30,7 @@
     @include respond(tab-port) {
       display: flex;
       flex-direction: column;
-      background-color: var(--color-primary);
+      background-color: var(--bg-color);
       position: absolute;
       align-items: center;
       padding-top: 3rem;
@@ -48,9 +48,12 @@
       display: inline-block;
       padding: 1rem;
       font-weight: 400;
+      cursor: pointer;
+      color: var(--color-text);
 
       @include respond(tab-port) {
         margin-top: 4rem;
+        color: #fff;
       }
 
       a:visited,

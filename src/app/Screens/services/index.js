@@ -5,7 +5,7 @@ import  sass from '../../../Assets/Images/sass.png'
 import "./index.scss";
 const Services = () => {
   return (
-    <div className="services">
+    <section className="services" id="services">
       <div className="services__first-row">
         <h1 className="services__heading ">Our Services</h1>
         <p className="services__paragraph paragraph">
@@ -44,7 +44,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

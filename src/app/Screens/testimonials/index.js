@@ -23,7 +23,7 @@ const Testimonial = () => {
       return () => window.removeEventListener("resize", handleWindowResize);
     }, [windowSize]);
   return (
-    <div className="testimonial">
+    <section className="testimonial">
       <h1 className="testimonial__heading">Testimonials</h1>
       <div className={`testimonial__box ${showSlider ? "hidden" : ""}`}>
         <div className="testimonial__box--img">
@@ -78,7 +78,7 @@ const Testimonial = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

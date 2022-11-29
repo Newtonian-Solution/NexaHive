@@ -1,35 +1,86 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Logo from "../../Assets/Images/Logo.png";
 import "./index.scss";
-import { Link } from "react-router-dom";
 import Button from "../button";
+import { Link } from "react-scroll";
 const Nav = () => {
   const [checked, setChecked] = useState(false);
+  const el = useRef(null);
 
-
- 
+  const handleClick = (e) => {
+    console.log(el.current.target);
+  };
 
   return (
     <>
-      <nav className={`nav sticky`} >
+      <nav className={`nav sticky`}>
         <div className="nav__logo--container">
           <img src={Logo} alt="nexahive-logo" />
         </div>
-        <ul className={`nav__items ${checked && "active"}`}>
+        <ul
+          className={`nav__items ${checked && "active"}`}
+          ref={el}
+          onClick={handleClick}
+        >
           <li className="nav__items--item">
-            <Link>Home</Link>
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Home
+            </Link>
           </li>
           <li className="nav__items--item">
-            <Link>About Us</Link>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              About Us
+            </Link>
           </li>
           <li className="nav__items--item">
-            <Link>Services</Link>
+            <Link
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Services
+            </Link>
           </li>
           <li className="nav__items--item">
-            <Link>Projects</Link>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Projects
+            </Link>
           </li>
           <li className="nav__items--item">
-            <Link>Team</Link>
+            <Link
+              activeClass="active"
+              to="teams"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Team
+            </Link>
           </li>
         </ul>
         <Button className={"nav__btn"}>Contact Us</Button>

@@ -2,6 +2,8 @@
   --color-primary: #226711;
   --bg-color: #5840BA;
   --color-text:#808080;
+  --font-family-1 : 'Roboto', sans-serif;
+  --font-family-2 : "Space Grotesk";
  
 }
 
@@ -43,6 +45,8 @@ body {
   font-size: 1.5rem;
   // padding-right: 5rem;
   // padding-left: 5rem;
+  scroll-behavior: smooth;
+
 }
 *,
 *::before,
@@ -98,14 +102,15 @@ body {
   color: var(--color-primary);
 }
 .paragraph {
-   font-family: sans-serif;
+   font-family: var(--font-family-1);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2rem;
     width: 50rem;
     text-align: left;
     color: var(--color-text);
-    line-height: 21px;
+    line-height: 23px;
+    letter-spacing: 1px;
 }
 
 @keyframes up-down {

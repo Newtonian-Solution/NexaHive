@@ -29,7 +29,7 @@ const About = () => {
   }, [windowSize]);
 
   return (
-    <div className="about">
+    <section className="about" id="about">
       <div className="about__first-row">
         <h1 className="about__heading">About Us</h1>
         <p className="about--paragraph paragraph">
@@ -61,7 +61,7 @@ const About = () => {
               <SwiperSlide><img src={Education} alt="" /></SwiperSlide>
              
       </Swiper>
-    </div>
+    </section>
   );
 };
 

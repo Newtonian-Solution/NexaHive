@@ -5,7 +5,7 @@ import Button from "../../../Component/button";
 
 const HeroSection = () => {
   return (
-    <div className="hero">
+    <section className="hero" id="home">
       <div className="first-row">
         <h1 className="hero--heading">
           Building Digital Products, Brands & Experience.{" "}
@@ -21,7 +21,7 @@ const HeroSection = () => {
               </p>
               <Button className={'hero-btn'}>Start a Project</Button>
       </div>
-    </div>
+    </section>
   );
 };
 

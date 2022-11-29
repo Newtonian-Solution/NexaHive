@@ -1,52 +1,49 @@
 .accordion {
-    list-style: none;
-    border: 1px solid #808080;;
-    padding: 1rem;
-    border-radius: 5px;
+  list-style: none;
+  border: 1px solid #808080;
+  padding: 1rem;
+  border-radius: 5px;
 }
 .accordion_item {
-     &:not(:last-child) {
-        border-bottom: 1px solid  #808080;
-    }
+  &:not(:last-child) {
+    border-bottom: 1px solid #808080;
+  }
 }
 .button {
-    font-size: 2rem;
-    color: #808080;;
-    text-align: left;
-    font-weight: 400;
-    font-family: sans-serif;
-    background: transparent;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 8px;
-    cursor: pointer;
-    border: none;
-    &:active {
-        outline: none;
-    }
-    
-   
+  font-size: 2rem;
+  color: #808080;
+  text-align: left;
+  font-family: var(--font-family-1);
+  font-weight: 300;
 
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8px;
+  cursor: pointer;
+  border: none;
+  &:active {
+    outline: none;
+  }
 }
 .control {
-    font-size: 20px;
+  font-size: 20px;
 }
 .answer {
-    padding: 20px;
-     font-family: sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
-    color: var(--color-text);
-    line-height: 21px;
-
+  padding: 20px;
+  font-family: var(--font-family-1);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--color-text);
+  line-height: 21px;
 }
 
 .answer_wrapper {
-    height: 0;
-    overflow: hidden;
-    transition: height ease 0.2s;
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.2s;
 }

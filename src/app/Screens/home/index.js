@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from '../../../Component/nav';
 import About from '../about';
 import Faqs from '../faqs';
+import Footer from '../footer';
 import HeroSection from '../hero';
 import Projects from '../projects';
 import Services from '../services';
@@ -20,6 +21,7 @@ const Home = () => {
       <Teams />
       <Testimonial />
       <Faqs />
+      <Footer />
 
     
       

@@ -25,7 +25,7 @@ const Teams = () => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, [windowSize]);
   return (
-    <div className="teams">
+    <section className="teams" id="teams">
       <div className="u-center-text">
         <h1 className="teams__heading">Our Teams</h1>
       </div>
@@ -81,7 +81,7 @@ const Teams = () => {
           <span className="teams__role">Saas Expert</span>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

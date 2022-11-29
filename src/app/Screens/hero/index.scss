@@ -71,6 +71,9 @@
     @include respond(phone) {
       width: 100% !important;
     }
+    @media (max-width:280px) {
+      width: auto !important;
+    }
   }
   &-btn {
     border-radius: 100px !important;

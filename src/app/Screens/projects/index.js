@@ -32,7 +32,7 @@ const Projects = () => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, [windowSize]);
   return (
-    <div className="projects">
+    <section className="projects" id="projects">
       <h1 className="projects__heading">Our Recent Projects</h1>
       <p className="projects__paragraph paragraph">
         Here are some of our recent projects that you can key in as an
@@ -83,7 +83,7 @@ const Projects = () => {
           <span className="projects__work--title">Cyber Security</span>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

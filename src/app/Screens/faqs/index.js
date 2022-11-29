@@ -4,12 +4,12 @@ import './index.scss'
 
 const Faqs = () => {
   return (
-    <div className="faqs">
+    <section className="faqs" id='faqs'>
       <div className="u-center-text margin-bottom-medium">
         <h1 className="faqs__heading">Faq</h1>
       </div>
       <Accordion />
-    </div>
+    </section>
   );
 }
 

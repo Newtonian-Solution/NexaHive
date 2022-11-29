@@ -1,6 +1,6 @@
 @import '/src/index.scss';
 .teams {
-  padding: 3rem;
+  padding: 4rem;
   &__heading {
     font-family: "Space Grotesk";
     font-style: normal;
@@ -40,9 +40,9 @@
   &__role {
     color: #808080;
     font-size: 2rem;
-    font-family: sans-serif;
+    font-family: var(--font-family-1);
     display: inline-block;
-    font-weight: 400;
+    font-weight: 300;
     
   }
   .swiper {
