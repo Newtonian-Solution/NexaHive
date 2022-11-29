@@ -1,14 +1,13 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import Logo from "../../Assets/Images/Logo.png";
 import "./index.scss";
 import Button from "../button";
 import { Link } from "react-scroll";
 const Nav = () => {
   const [checked, setChecked] = useState(false);
-  const el = useRef(null);
 
-  const handleClick = (e) => {
-    console.log(el.current.target);
+  const handleClose = () => {
+    setChecked(false)
   };
 
   return (
@@ -17,11 +16,7 @@ const Nav = () => {
         <div className="nav__logo--container">
           <img src={Logo} alt="nexahive-logo" />
         </div>
-        <ul
-          className={`nav__items ${checked && "active"}`}
-          ref={el}
-          onClick={handleClick}
-        >
+        <ul className={`nav__items ${checked && "active"}`}>
           <li className="nav__items--item">
             <Link
               activeClass="active"
@@ -30,11 +25,12 @@ const Nav = () => {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={handleClose}
             >
               Home
             </Link>
           </li>
-          <li className="nav__items--item">
+          <li className="nav__items--item" onClick={handleClose}>
             <Link
               activeClass="active"
               to="about"
@@ -42,11 +38,12 @@ const Nav = () => {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={handleClose}
             >
               About Us
             </Link>
           </li>
-          <li className="nav__items--item">
+          <li className="nav__items--item" onClick={handleClose}>
             <Link
               activeClass="active"
               to="services"
@@ -54,11 +51,12 @@ const Nav = () => {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={handleClose}
             >
               Services
             </Link>
           </li>
-          <li className="nav__items--item">
+          <li className="nav__items--item" onClick={handleClose}>
             <Link
               activeClass="active"
               to="projects"
@@ -66,11 +64,12 @@ const Nav = () => {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={handleClose}
             >
               Projects
             </Link>
           </li>
-          <li className="nav__items--item">
+          <li className="nav__items--item" onClick={handleClose}>
             <Link
               activeClass="active"
               to="teams"
@@ -78,6 +77,7 @@ const Nav = () => {
               smooth={true}
               offset={-100}
               duration={500}
+              onClick={handleClose}
             >
               Team
             </Link>
