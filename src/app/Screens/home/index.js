@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../../../Component/nav';
 import About from '../about';
+import Contact from '../contact';
 import Faqs from '../faqs';
 import Footer from '../footer';
 import HeroSection from '../hero';
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <div className='heading--primary'>
       <Nav />
+      <Contact />
       <HeroSection />
       <About />
       <Services />

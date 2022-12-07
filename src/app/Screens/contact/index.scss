@@ -1,0 +1,124 @@
+@import "/src/index.scss";
+.contact__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.3s;
+  visibility: hidden;
+  .contact {
+    position: relative;
+    background-color: #fff;
+    padding: 4rem;
+    width: 50vw;
+    
+    @media (max-width: 1030px) {
+      width: 70vw;
+    }
+    @include respond(phone) {
+      width: 90vw;
+    }
+    &__close {
+      display: inline-block;
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      cursor: pointer;
+    }
+    &__img--wrapper {
+      height: 30rem;
+      width: 20rem;
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &__heading--wrapper {
+      text-align: center;
+    }
+    &__heading {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #151515;
+      margin-bottom: 3rem;
+    }
+    &__form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @include respond(phone) {
+        grid-template-columns: 1fr;
+      }
+      gap: 2rem;
+
+      &--label {
+        display: block;
+        color: var(--color-text);
+        font-size: 1.5rem;
+        font-family: var(--font-family-1);
+        margin-bottom: 1rem;
+      }
+      &--input {
+        padding: 2rem 1rem;
+        border: 1px solid var(--color-text);
+        width: 100%;
+        font-family: var(--font-family-1);
+        color: var(--color-text);
+        font-size: 2rem;
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        height: 20rem;
+        @include respond(phone) {
+          height: 10rem;
+        }
+      }
+      &--btn {
+        padding: 1.5rem 3.5rem;
+        border: none;
+        border-radius: 100px;
+        background-color: var(--color-primary);
+        color: #fff;
+        font-size: 2rem;
+        font-family: var(--font-family-1);
+        font-weight: 300;
+        cursor: pointer;
+
+        &:active {
+          outline: none;
+        }
+      }
+      .grid3,
+      .grid4,
+      .grid5 {
+        grid-column: 1 / -1;
+      }
+      .grid6 {
+        grid-column: 1 / -1;
+        justify-self: center;
+      }
+    }
+  }
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+

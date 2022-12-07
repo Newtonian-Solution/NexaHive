@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState,useContext} from "react";
 import Logo from "../../Assets/Images/Logo.png";
 import "./index.scss";
 import Button from "../button";
 import { Link } from "react-scroll";
+import ModalContext from "../../state-manager/modalProvider";
 const Nav = () => {
   const [checked, setChecked] = useState(false);
+  const {setModal} = useContext(ModalContext)
 
   const handleClose = () => {
     setChecked(false)
@@ -83,7 +85,7 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-        <Button className={"nav__btn"}>Contact Us</Button>
+        <Button className={"nav__btn"} onclick={setModal}>Contact Us</Button>
         <div className="nav__icon">
           <input
             type="checkbox"

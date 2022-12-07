@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import { AppRoutes } from './app/app-routing';
+import { ModalProvider } from './state-manager/modalProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppRoutes />
+    <ModalProvider>
+      <AppRoutes />
+    </ModalProvider>
   </React.StrictMode>
 );
 

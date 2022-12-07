@@ -85,6 +85,7 @@
     color: #fafafa;
     font-family: sans-serif;
     position: relative;
+    cursor: pointer;
 
     @include respond(tab-port) {
       width: 18rem;

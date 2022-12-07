@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useContext} from "react";
 import "./index.scss";
 import WorkingSpace from "../../../Assets/Images/co-working-space.png";
 import Button from "../../../Component/button";
+import ModalContext from "../../../state-manager/modalProvider";
+
 
 const HeroSection = () => {
+  const {setModal} = useContext(ModalContext)
   return (
     <section className="hero" id="home">
       <div className="first-row">
@@ -19,7 +22,7 @@ const HeroSection = () => {
           We take you to where you need to be through Visuals, we are everything
           that happens between your first idea to a product everyone is using.
               </p>
-              <Button className={'hero-btn'}>Start a Project</Button>
+              <Button className={'hero-btn'} onclick={setModal}>Start a Project</Button>
       </div>
     </section>
   );
