@@ -32,7 +32,11 @@ const About = () => {
     <section className="about" id="about">
       <div className="about__first-row">
         <h1 className="about__heading">About Us</h1>
-        <p className="about--paragraph paragraph">
+        <p
+          className="about--paragraph paragraph"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           NexaHive is an operating organization. We are one of Nigeria’s
           fastest-growing information technology service and software
           development companies, utilizing an extensive and robust indigenous
@@ -52,14 +56,18 @@ const About = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{ delay: 2500, disableOnInteraction: false}}
-        pagination={{ clickable: true,}}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
         modules={[Autoplay, Pagination]}
-        className={`mySwiper ${showSlider ? 'show' : 'hidden'}`}
-          >
-              <SwiperSlide><img src={Wireframe} alt="" /></SwiperSlide>
-              <SwiperSlide><img src={Education} alt="" /></SwiperSlide>
-             
+        className={`mySwiper ${showSlider ? "show" : "hidden"}`}
+        data-aos="zoom-in"
+      >
+        <SwiperSlide>
+          <img src={Wireframe} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Education} alt="" />
+        </SwiperSlide>
       </Swiper>
     </section>
   );

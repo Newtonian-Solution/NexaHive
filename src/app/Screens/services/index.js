@@ -13,7 +13,7 @@ const Services = () => {
           convinced
         </p>
 
-        <div className="services__card  card-1">
+        <div className="services__card  card-1" data-aos="zoom-in">
           <Software className="services__card--icon" />
           <h3 className="services__card--heading">Software Development</h3>
           <p className="services__card--paragraph">
@@ -25,16 +25,16 @@ const Services = () => {
         </div>
       </div>
       <div className="services__second-row">
-        <div className="services__card card-2">
-          <img src={cyber} alt='cyber-logo' className="services__card--icon" />
+        <div className="services__card card-2" data-aos="zoom-in">
+          <img src={cyber} alt="cyber-logo" className="services__card--icon" />
           <h3 className="services__card--heading">CyberSecurity</h3>
           <p className="services__card--paragraph">
             We help you to prevent data breaches, identity, theft and
             cyber-attacks as well as risk management is some cases.
           </p>
         </div>
-        <div className="services__card card-3">
-          <img src={sass} alt='sass-logo' className="services__card--icon" />
+        <div className="services__card card-3" data-aos="zoom-in">
+          <img src={sass} alt="sass-logo" className="services__card--icon" />
           <h3 className="services__card--heading">Sass</h3>
           <p className="services__card--paragraph">
             We help you deliver on-demand computing services through

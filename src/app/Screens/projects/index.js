@@ -40,19 +40,35 @@ const Projects = () => {
       </p>
 
       <div className={`projects__work ${showSlider ? "hidden" : ""}`}>
-        <div className="project__container1">
+        <div
+          className="project__container1"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <img src={project1} alt="project1" className="project" />
           <span className="projects__work--title">Spotify Software</span>
         </div>
-        <div className="project__container2">
+        <div
+          className="project__container2"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <img src={project2} alt="project1" className="project" />
           <span className="projects__work--title">Figma Software</span>
         </div>
-        <div className="project__container3">
+        <div
+          className="project__container3"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <img src={project3} alt="project1" className="project" />
           <span className="projects__work--title">Adobe Software</span>
         </div>
-        <div className="project__container4">
+        <div
+          className="project__container4"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <img src={project4} alt="project1" className="project" />
           <span className="projects__work--title">Cyber Security</span>
         </div>
@@ -63,8 +79,9 @@ const Projects = () => {
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         modules={[Autoplay, Pagination]}
-       
         className={`mySwiper ${showSlider ? "show" : "hidden"}`}
+        data-aos="zoom-in"
+        data-aos-duration='1000'
       >
         <SwiperSlide>
           <img src={project1} alt="project1" className="project" />

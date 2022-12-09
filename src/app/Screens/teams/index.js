@@ -30,22 +30,22 @@ const Teams = () => {
         <h1 className="teams__heading">Our Teams</h1>
       </div>
       <div className={`teams__container ${showSlider ? "hidden" : ""}`}>
-        <div className="img__container">
+        <div className="img__container" data-aos="fade-up" data-aos-duration="1000">
           <img src={team1} alt="" />
           <h4 className="teams__name">Ahmed Nurudeen</h4>
           <span className="teams__role">C.E.O</span>
         </div>
-        <div className="img__container">
+        <div className="img__container" data-aos="fade-down">
           <img src={team2} alt="" />
           <h4 className="teams__name">Ahmed Omuya</h4>
           <span className="teams__role">C.T.O</span>
         </div>
-        <div className="img__container">
+        <div className="img__container" data-aos="fade-up">
           <img src={team3} alt="" />
           <h4 className="teams__name">Bruno Mars</h4>
           <span className="teams__role">Cyber Security Expert</span>
         </div>
-        <div className="img__container">
+        <div className="img__container" data-aos="fade-down">
           <img src={team4} alt="" />
           <h4 className="teams__name">Bella Hadid</h4>
           <span className="teams__role">Saas Expert</span>
@@ -55,10 +55,12 @@ const Teams = () => {
         spaceBetween={30}
         slidesPerView={2}
         centeredSlides={true}
-        autoplay={{ delay: 2500, disableOnInteraction: false, }}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         modules={[Autoplay, Pagination]}
         className={`mySwiper ${showSlider ? "show" : "hidden"}`}
+        data-aos="zoom-in"
+        data-aos-duration="1500"
       >
         <SwiperSlide>
           <img src={team1} alt="team1" />

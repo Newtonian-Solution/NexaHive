@@ -25,7 +25,11 @@ const Testimonial = () => {
   return (
     <section className="testimonial">
       <h1 className="testimonial__heading">Testimonials</h1>
-      <div className={`testimonial__box ${showSlider ? "hidden" : ""}`}>
+      <div
+        className={`testimonial__box ${showSlider ? "hidden" : ""}`}
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
         <div className="testimonial__box--img">
           <img src={team1} alt="" />
         </div>
@@ -35,7 +39,11 @@ const Testimonial = () => {
           to this kinda job
         </span>
       </div>
-      <div className={`testimonial__box ${showSlider ? "hidden" : ""}`}>
+      <div
+        className={`testimonial__box ${showSlider ? "hidden" : ""}`}
+        data-aos="fade-left"
+        data-aos-duration="zoom-in"
+      >
         <div className="testimonial__box--img">
           <img src={team2} alt="" />
         </div>
@@ -51,7 +59,11 @@ const Testimonial = () => {
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         modules={[Autoplay, Pagination]}
-        className={`mySwiper testimonial__swiper ${showSlider ? "show" : "hidden"}`}
+        className={`mySwiper testimonial__swiper ${
+          showSlider ? "show" : "hidden"
+          }`}
+        data-aos="zoom-in"
+        data-aos-duration="1500"
       >
         <SwiperSlide className="testimonial__swiper-slide">
           <div className="testimonial__box">
