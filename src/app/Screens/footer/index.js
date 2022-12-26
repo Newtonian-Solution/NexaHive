@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="icon__container">
           <IoLogoInstagram className="footer__icon" />
 
-          <a href="https://www.facebook.com/profile.php?id=100076316062414&mibextid=ZbWKwL" target="_blank">
+          <a href="https://www.facebook.com/profile.php?id=100076316062414&mibextid=ZbWKwL">
             <FaFacebookF className="footer__icon" />
           </a>
 
