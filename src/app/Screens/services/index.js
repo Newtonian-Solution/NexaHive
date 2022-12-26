@@ -35,7 +35,7 @@ const Services = () => {
         </div>
         <div className="services__card card-3" data-aos="zoom-in">
           <img src={sass} alt="sass-logo" className="services__card--icon" />
-          <h3 className="services__card--heading">Sass</h3>
+          <h3 className="services__card--heading">SaaS</h3>
           <p className="services__card--paragraph">
             We help you deliver on-demand computing services through
             applications over the internet. It improves accessibility,
