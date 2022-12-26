@@ -47,7 +47,7 @@
     .img {
       width: 100%;
       height: 100%;
-          animation: up-down 2s ease-in-out infinite alternate-reverse both;
+        animation: up-down 2s ease-in-out infinite alternate-reverse both;
 
     }
     @include respond(phone) {

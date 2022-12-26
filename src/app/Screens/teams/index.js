@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
-import team1 from "../../../Assets/Images/team4.png";
-import team2 from "../../../Assets/Images/team3.png";
-import team3 from "../../../Assets/Images/team2.png";
+import Jubril from "../../../Assets/Images/Jubril.jpg";
+import Omuya from "../../../Assets/Images/Omuya.jpg";
+import Aminu from "../../../Assets/Images/Aminu.jpg";
 import team4 from "../../../Assets/Images/team1.png";
 import { getWindowSize } from "../../../utils/utility";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -31,18 +31,18 @@ const Teams = () => {
       </div>
       <div className={`teams__container ${showSlider ? "hidden" : ""}`}>
         <div className="img__container" data-aos="fade-up" data-aos-duration="1000">
-          <img src={team1} alt="" />
+          <img src={Omuya} alt="" />
           <h4 className="teams__name">Ahmed Nurudeen</h4>
           <span className="teams__role">C.E.O</span>
         </div>
         <div className="img__container" data-aos="fade-down">
-          <img src={team2} alt="" />
-          <h4 className="teams__name">Ahmed Omuya</h4>
-          <span className="teams__role">C.T.O</span>
+          <img src={Jubril} alt="" />
+          <h4 className="teams__name">Lukman Jubril</h4>
+          <span className="teams__role">Frontend Developer</span>
         </div>
         <div className="img__container" data-aos="fade-up">
-          <img src={team3} alt="" />
-          <h4 className="teams__name">Bruno Mars</h4>
+          <img src={Aminu} alt="" />
+          <h4 className="teams__name">Aminu Idris</h4>
           <span className="teams__role">Cyber Security Expert</span>
         </div>
         <div className="img__container" data-aos="fade-down">
@@ -63,18 +63,18 @@ const Teams = () => {
         data-aos-duration="1500"
       >
         <SwiperSlide>
-          <img src={team1} alt="team1" />
+          <img src={Omuya} alt="team1" />
           <h4 className="teams__name">Ahmed Nurudeen</h4>
           <span className="teams__role">C.E.O</span>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={team2} alt="team2" />
-          <h4 className="teams__name">Ahmed Omuya</h4>
+          <img src={Jubril} alt="team2" />
+          <h4 className="teams__name">Lukman Jubril</h4>
           <span className="teams__role">C.T.O</span>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={team3} alt="team3" />
-          <h4 className="teams__name">Bruno Mars</h4>
+          <img src={Aminu} alt="team3" />
+          <h4 className="teams__name">Aminu Idris</h4>
           <span className="teams__role">Cyber Security Expert</span>
         </SwiperSlide>
         <SwiperSlide>

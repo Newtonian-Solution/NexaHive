@@ -42,6 +42,7 @@
     line-height: 25px;
     color: #fff;
     display: inline-block;
+    cursor: pointer;
   }
   &__link--heading {
     font-family: var(--font-family-2);
@@ -61,7 +62,13 @@
    font-size: 5rem;
   }
   .column4{
-align-self: end;  }
+align-self: end; 
+a:visited, a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+}
 &__line {
   height: 1px;
   width: 100%;
