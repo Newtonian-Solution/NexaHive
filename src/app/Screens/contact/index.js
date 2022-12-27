@@ -5,7 +5,7 @@ const Contact = () => {
     const {value: {modal}, setModal} = useContext(ModalContext)
   return (
     <div className={`contact__wrapper ${modal ? "active" : ""}`} onClick={setModal}>
-      <div className={`contact`} onClick={(e) => e.stopPropagation()}>
+      <div className={`contact ${modal ? 'contact-active' : ''}`} onClick={(e) => e.stopPropagation()}>
         <span className="contact__close" onClick={setModal}>
           &times;
         </span> 

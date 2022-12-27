@@ -45,11 +45,7 @@ const Teams = () => {
           <h4 className="teams__name">Aminu Idris</h4>
           <span className="teams__role">Cyber Security Expert</span>
         </div>
-        <div className="img__container" data-aos="fade-down">
-          <img src={team4} alt="" />
-          <h4 className="teams__name">Bella Hadid</h4>
-          <span className="teams__role">Saas Expert</span>
-        </div>
+        
       </div>
       <Swiper
         spaceBetween={30}
@@ -77,11 +73,7 @@ const Teams = () => {
           <h4 className="teams__name">Aminu Idris</h4>
           <span className="teams__role">Cyber Security Expert</span>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={team4} alt="team3" />
-          <h4 className="teams__name">Bella Hadid</h4>
-          <span className="teams__role">Saas Expert</span>
-        </SwiperSlide>
+       
       </Swiper>
     </section>
   );
