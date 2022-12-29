@@ -3,7 +3,6 @@ import "./index.scss";
 import Jubril from "../../../Assets/Images/Jubril.jpg";
 import Omuya from "../../../Assets/Images/Omuya.jpg";
 import Aminu from "../../../Assets/Images/Aminu.jpg";
-import team4 from "../../../Assets/Images/team1.png";
 import { getWindowSize } from "../../../utils/utility";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
